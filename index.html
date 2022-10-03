@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <style>
+        .collapse:not(.show) {
+    display: none;
+}
+    </style>
+</head>
+<body>
+
+<div class="container mx-auto p-4">
+    <table class="border-collapse table-fixed cursor-pointer px-2 w-full text-center   bg-red-400	">
+        <thead id="module_2_table" class="bg-yellow-300	 text-black	" data-bs-toggle="collapse" data-bs-target="#task_2_table" aria-expanded="false" aria-controls="task_2_table"  >
+          <tr>
+            <th colspan="2" class="font-medium  text-left relative 	 break-all pl-2">
+              <a class="absolute 		 top-1/2 plus-icon	-translate-y-1/2 -left-6 text-xl" href="#" id="plus_1"></a> Thamil
+
+              <input type="hidden" value="true" id="load_ajax_1">
+            </th>
+            <th class="text-sm 	 py-2">
+              <span class="		 font-medium text-xs">Estimate</span>
+              <br>
+              <span id="total_module_efforts_1">
+                110:00
+              </span>
+            </th>
+            <th class="text-sm 	 py-2">
+              <span class="		 font-medium text-xs">Worked</span>
+              <br> 0:00
+            </th>
+            <th class="text-sm 	 py-2">
+              <span class="		 font-medium text-xs">Approved</span>
+              <br> 0:00
+            </th>
+            <th class="text-sm 	 py-2">
+              <span class="		 font-medium text-xs">Efficiency</span>
+              <br> 0:00
+            </th>
+            <th class="text-sm 	 py-2">
+              <span class="		 font-medium text-xs">Productivity</span>
+              <br> 0:00
+            </th>
+            <th class="text-right ">
+              <div class="flex justify-center">
+                <div class="mr-5">
+                  <a href="#" onclick="openModuleModal('edit', '1')">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                      <title>Edit</title>
+                      <g id="Final---User-Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.5">
+                        <g id="UserProfile---edit" transform="translate(-1347.000000, -228.000000)" fill="#020C2D">
+                          <g id="Group-3" transform="translate(120.000000, 220.000000)">
+                            <g id="edit" transform="translate(1227.000000, 8.000000)">
+                              <path id="Combined-Shape" d="M14,9 L14,17.3944487 C14,17.7892987 13.8831239,18.1753141 13.6641006,18.5038491 L12,21 L10.3358994,18.5038491 C10.1168761,18.1753141 10,17.7892987 10,17.3944487 L10,9 L14,9 Z M12,3 C13.1045695,3 14,3.8954305 14,5 L14,7 L10,7 L10,5 C10,3.8954305 10.8954305,3 12,3 Z" transform="translate(12.000000, 12.000000) rotate(30.000000) translate(-12.000000, -12.000000) "></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+                <div>
+                </div>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody id="task_2_table" class="accordion-collapse collapse relative">
+          <tr>
+            <th colspan="2" class="font-medium  text-left relative text-white	 break-all pl-2">
+              <a class="absolute text-white		 top-1/2 plus-icon	-translate-y-1/2 -left-6 text-xl" href="#" id="plus_1"></a> Thamil
+
+              <input type="hidden" value="true" id="load_ajax_1">
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Estimate</span>
+              <br>
+              <span id="total_module_efforts_1">
+                110:00
+              </span>
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Worked</span>
+              <br> 0:00
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Approved</span>
+              <br> 0:00
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Efficiency</span>
+              <br> 0:00
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Productivity</span>
+              <br> 0:00
+            </th>
+            <th class="text-right ">
+              <div class="flex justify-center">
+                <div class="mr-5">
+                  <a href="#" onclick="openModuleModal('edit', '1')">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                      <title>Edit</title>
+                      <g id="Final---User-Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.5">
+                        <g id="UserProfile---edit" transform="translate(-1347.000000, -228.000000)" fill="#020C2D">
+                          <g id="Group-3" transform="translate(120.000000, 220.000000)">
+                            <g id="edit" transform="translate(1227.000000, 8.000000)">
+                              <path id="Combined-Shape" d="M14,9 L14,17.3944487 C14,17.7892987 13.8831239,18.1753141 13.6641006,18.5038491 L12,21 L10.3358994,18.5038491 C10.1168761,18.1753141 10,17.7892987 10,17.3944487 L10,9 L14,9 Z M12,3 C13.1045695,3 14,3.8954305 14,5 L14,7 L10,7 L10,5 C10,3.8954305 10.8954305,3 12,3 Z" transform="translate(12.000000, 12.000000) rotate(30.000000) translate(-12.000000, -12.000000) "></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+                <div>
+                </div>
+              </div>
+            </th>
+          </tr>
+          <tr>
+            <th colspan="2" class="font-medium  text-left relative text-white	 break-all pl-2">
+              <a class="absolute text-white		 top-1/2 plus-icon	-translate-y-1/2 -left-6 text-xl" href="#" id="plus_1"></a> Thamil
+
+              <input type="hidden" value="true" id="load_ajax_1">
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Estimate</span>
+              <br>
+              <span id="total_module_efforts_1">
+                110:00
+              </span>
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Worked</span>
+              <br> 0:00
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Approved</span>
+              <br> 0:00
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Efficiency</span>
+              <br> 0:00
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Productivity</span>
+              <br> 0:00
+            </th>
+            <th class="text-right ">
+              <div class="flex justify-center">
+                <div class="mr-5">
+                  <a href="#" onclick="openModuleModal('edit', '1')">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                      <title>Edit</title>
+                      <g id="Final---User-Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.5">
+                        <g id="UserProfile---edit" transform="translate(-1347.000000, -228.000000)" fill="#020C2D">
+                          <g id="Group-3" transform="translate(120.000000, 220.000000)">
+                            <g id="edit" transform="translate(1227.000000, 8.000000)">
+                              <path id="Combined-Shape" d="M14,9 L14,17.3944487 C14,17.7892987 13.8831239,18.1753141 13.6641006,18.5038491 L12,21 L10.3358994,18.5038491 C10.1168761,18.1753141 10,17.7892987 10,17.3944487 L10,9 L14,9 Z M12,3 C13.1045695,3 14,3.8954305 14,5 L14,7 L10,7 L10,5 C10,3.8954305 10.8954305,3 12,3 Z" transform="translate(12.000000, 12.000000) rotate(30.000000) translate(-12.000000, -12.000000) "></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+                <div>
+                </div>
+              </div>
+            </th>
+          </tr>
+          <tr>
+            <th colspan="2" class="font-medium  text-left relative text-white	 break-all pl-2">
+              <a class="absolute text-white		 top-1/2 plus-icon	-translate-y-1/2 -left-6 text-xl" href="#" id="plus_1"></a> Shiva
+
+              <input type="hidden" value="true" id="load_ajax_1">
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Estimate</span>
+              <br>
+              <span id="total_module_efforts_1">
+                110:00
+              </span>
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Worked</span>
+              <br> 0:00
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Approved</span>
+              <br> 0:00
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Efficiency</span>
+              <br> 0:00
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Productivity</span>
+              <br> 0:00
+            </th>
+            <th class="text-right ">
+              <div class="flex justify-center">
+                <div class="mr-5">
+                  <a href="#" onclick="openModuleModal('edit', '1')">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                      <title>Edit</title>
+                      <g id="Final---User-Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.5">
+                        <g id="UserProfile---edit" transform="translate(-1347.000000, -228.000000)" fill="#020C2D">
+                          <g id="Group-3" transform="translate(120.000000, 220.000000)">
+                            <g id="edit" transform="translate(1227.000000, 8.000000)">
+                              <path id="Combined-Shape" d="M14,9 L14,17.3944487 C14,17.7892987 13.8831239,18.1753141 13.6641006,18.5038491 L12,21 L10.3358994,18.5038491 C10.1168761,18.1753141 10,17.7892987 10,17.3944487 L10,9 L14,9 Z M12,3 C13.1045695,3 14,3.8954305 14,5 L14,7 L10,7 L10,5 C10,3.8954305 10.8954305,3 12,3 Z" transform="translate(12.000000, 12.000000) rotate(30.000000) translate(-12.000000, -12.000000) "></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+                <div>
+                </div>
+              </div>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class="container mx-auto p-4">
+    <table class="border-collapse table-fixed cursor-pointer px-2 w-full text-center bg-red-700	text-white			">
+        <thead id="module_1_table" class="bg-yellow-300	text-black" data-bs-toggle="collapse" data-bs-target="#task_1_table" aria-expanded="false" aria-controls="task_1_table"  >
+          <tr>
+            <th colspan="2" class="font-medium  text-left relative 		 break-all pl-2">
+              <a class="absolute 		 top-1/2 plus-icon	-translate-y-1/2 -left-6 text-xl" href="#" id="plus_1"></a> Thamil
+
+              <input type="hidden" value="true" id="load_ajax_1">
+            </th>
+            <th class="text-sm 	 py-2">
+              <span class="		 font-medium text-xs">Estimate</span>
+              <br>
+              <span id="total_module_efforts_1">
+                110:00
+              </span>
+            </th>
+            <th class="text-sm 	 py-2">
+              <span class="		 font-medium text-xs">Worked</span>
+              <br> 0:00
+            </th>
+            <th class="text-sm 	 py-2">
+              <span class="		 font-medium text-xs">Approved</span>
+              <br> 0:00
+            </th>
+            <th class="text-sm 	 py-2">
+              <span class="		 font-medium text-xs">Efficiency</span>
+              <br> 0:00
+            </th>
+            <th class="text-sm 	 py-2">
+              <span class="		 font-medium text-xs">Productivity</span>
+              <br> 0:00
+            </th>
+            <th class="text-right ">
+              <div class="flex justify-center">
+                <div class="mr-5">
+                  <a href="#" onclick="openModuleModal('edit', '1')">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                      <title>Edit</title>
+                      <g id="Final---User-Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.5">
+                        <g id="UserProfile---edit" transform="translate(-1347.000000, -228.000000)" fill="#020C2D">
+                          <g id="Group-3" transform="translate(120.000000, 220.000000)">
+                            <g id="edit" transform="translate(1227.000000, 8.000000)">
+                              <path id="Combined-Shape" d="M14,9 L14,17.3944487 C14,17.7892987 13.8831239,18.1753141 13.6641006,18.5038491 L12,21 L10.3358994,18.5038491 C10.1168761,18.1753141 10,17.7892987 10,17.3944487 L10,9 L14,9 Z M12,3 C13.1045695,3 14,3.8954305 14,5 L14,7 L10,7 L10,5 C10,3.8954305 10.8954305,3 12,3 Z" transform="translate(12.000000, 12.000000) rotate(30.000000) translate(-12.000000, -12.000000) "></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+                <div>
+                </div>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody id="task_1_table" class="accordion-collapse collapse relative">
+          <tr>
+            <th colspan="2" class="font-medium  text-left relative text-white	 break-all pl-2">
+              <a class="absolute text-white		 top-1/2 plus-icon	-translate-y-1/2 -left-6 text-xl" href="#" id="plus_1"></a> Thamil
+
+              <input type="hidden" value="true" id="load_ajax_1">
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Estimate</span>
+              <br>
+              <span id="total_module_efforts_1">
+                110:00
+              </span>
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Worked</span>
+              <br> 0:00
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Approved</span>
+              <br> 0:00
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Efficiency</span>
+              <br> 0:00
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Productivity</span>
+              <br> 0:00
+            </th>
+            <th class="text-right ">
+              <div class="flex justify-center">
+                <div class="mr-5">
+                  <a href="#" onclick="openModuleModal('edit', '1')">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                      <title>Edit</title>
+                      <g id="Final---User-Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.5">
+                        <g id="UserProfile---edit" transform="translate(-1347.000000, -228.000000)" fill="#020C2D">
+                          <g id="Group-3" transform="translate(120.000000, 220.000000)">
+                            <g id="edit" transform="translate(1227.000000, 8.000000)">
+                              <path id="Combined-Shape" d="M14,9 L14,17.3944487 C14,17.7892987 13.8831239,18.1753141 13.6641006,18.5038491 L12,21 L10.3358994,18.5038491 C10.1168761,18.1753141 10,17.7892987 10,17.3944487 L10,9 L14,9 Z M12,3 C13.1045695,3 14,3.8954305 14,5 L14,7 L10,7 L10,5 C10,3.8954305 10.8954305,3 12,3 Z" transform="translate(12.000000, 12.000000) rotate(30.000000) translate(-12.000000, -12.000000) "></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+                <div>
+                </div>
+              </div>
+            </th>
+          </tr>
+          <tr>
+            <th colspan="2" class="font-medium  text-left relative text-white	 break-all pl-2">
+              <a class="absolute text-white		 top-1/2 plus-icon	-translate-y-1/2 -left-6 text-xl" href="#" id="plus_1"></a> Thamil
+
+              <input type="hidden" value="true" id="load_ajax_1">
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Estimate</span>
+              <br>
+              <span id="total_module_efforts_1">
+                110:00
+              </span>
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Worked</span>
+              <br> 0:00
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Approved</span>
+              <br> 0:00
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Efficiency</span>
+              <br> 0:00
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Productivity</span>
+              <br> 0:00
+            </th>
+            <th class="text-right ">
+              <div class="flex justify-center">
+                <div class="mr-5">
+                  <a href="#" onclick="openModuleModal('edit', '1')">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                      <title>Edit</title>
+                      <g id="Final---User-Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.5">
+                        <g id="UserProfile---edit" transform="translate(-1347.000000, -228.000000)" fill="#020C2D">
+                          <g id="Group-3" transform="translate(120.000000, 220.000000)">
+                            <g id="edit" transform="translate(1227.000000, 8.000000)">
+                              <path id="Combined-Shape" d="M14,9 L14,17.3944487 C14,17.7892987 13.8831239,18.1753141 13.6641006,18.5038491 L12,21 L10.3358994,18.5038491 C10.1168761,18.1753141 10,17.7892987 10,17.3944487 L10,9 L14,9 Z M12,3 C13.1045695,3 14,3.8954305 14,5 L14,7 L10,7 L10,5 C10,3.8954305 10.8954305,3 12,3 Z" transform="translate(12.000000, 12.000000) rotate(30.000000) translate(-12.000000, -12.000000) "></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+                <div>
+                </div>
+              </div>
+            </th>
+          </tr>
+          <tr>
+            <th colspan="2" class="font-medium  text-left relative text-white	 break-all pl-2">
+              <a class="absolute text-white		 top-1/2 plus-icon	-translate-y-1/2 -left-6 text-xl" href="#" id="plus_1"></a> Shiva
+
+              <input type="hidden" value="true" id="load_ajax_1">
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Estimate</span>
+              <br>
+              <span id="total_module_efforts_1">
+                110:00
+              </span>
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Worked</span>
+              <br> 0:00
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Approved</span>
+              <br> 0:00
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Efficiency</span>
+              <br> 0:00
+            </th>
+            <th class="text-sm text-white	 py-2">
+              <span class="text-white		 font-medium text-xs">Productivity</span>
+              <br> 0:00
+            </th>
+            <th class="text-right ">
+              <div class="flex justify-center">
+                <div class="mr-5">
+                  <a href="#" onclick="openModuleModal('edit', '1')">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                      <title>Edit</title>
+                      <g id="Final---User-Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.5">
+                        <g id="UserProfile---edit" transform="translate(-1347.000000, -228.000000)" fill="#020C2D">
+                          <g id="Group-3" transform="translate(120.000000, 220.000000)">
+                            <g id="edit" transform="translate(1227.000000, 8.000000)">
+                              <path id="Combined-Shape" d="M14,9 L14,17.3944487 C14,17.7892987 13.8831239,18.1753141 13.6641006,18.5038491 L12,21 L10.3358994,18.5038491 C10.1168761,18.1753141 10,17.7892987 10,17.3944487 L10,9 L14,9 Z M12,3 C13.1045695,3 14,3.8954305 14,5 L14,7 L10,7 L10,5 C10,3.8954305 10.8954305,3 12,3 Z" transform="translate(12.000000, 12.000000) rotate(30.000000) translate(-12.000000, -12.000000) "></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+                <div>
+                </div>
+              </div>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+</div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap-collapse.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
